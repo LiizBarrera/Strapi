@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  strapi:
+    container_name: tsi2024
+    image: strapi/strapi
+    environment:
+      - DATABASE_CLIENT=mongo
+      - DATABASE_HOST=tsi2024.33gkj.mongodb.net
+      - DATABASE_PORT=27017
+      - DATABASE_SSL=true
+      - DATABASE_SRV=true
+      - DATABASE_NAME=tsi2024
+      - DATABASE_USERNAME=admin
+      - DATABASE_PASSWORD=Maylo0520
+    ports:
+      - 1337:1337    
+      
+
